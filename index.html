@@ -7,31 +7,66 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="wrapper">
+    <main>
+      <div class="result__main">
+        <p class="result__header">Your Result</p>
+       <div class="main__score">
+        <h1>76</h1>
+        <p class="main__score__text">of 100</p>
+       </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+       <h2>Great</h2>
+       <p class="main__text">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+      <div class="result__summary">
+        <h3>Summary</h3>
+        <div class="result__summary__scores" id="reaction">
+          <div class="img__p__pair">
+            <picture>
+              <img src="./assets/images/icon-reaction.jpg" alt="">
+            </picture>
+            <p>Reaction</p>
+          </div>
+
+          <p>80<span> / 100</span></p>
+          <div class="special__border UL"></div>
+          <div class="special__border UR"></div>
+          <div class="special__border LL"></div>
+          <div class="special__border LR"></div>
+         </div>
+
+         <div class="result__summary__scores" id="memory">
+          <div class="img__p__pair">
+            <picture>
+              <img src="./assets/images/icon-memory.svg" alt="">
+            </picture>
+            <p>Memory</p>
+          </div>
+
+          <p>92<span> / 100</span></p>
+          <div class="special__border UL"></div>
+          <div class="special__border UR"></div>
+          <div class="special__border LL"></div>
+          <div class="special__border LR"></div>
+         </div>
+
+         <div class="resut__summary__scores" id="verbal">
+          <picture>
+            <p>Verbal</p>
+          </picture>
+         </div>
+
+        </div>
+    </main>
+  </div>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
   61 / 100
 
   Visual
@@ -41,7 +76,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Glenda J. Reed</a>.
   </div>
 </body>
-</html>
+</html
