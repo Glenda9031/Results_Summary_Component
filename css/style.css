@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --light_red: hsl(0, 100%, 67%);
+    --light_red_transparent: hsla(0, 100%, 67%, 10%);
+    --orangey_yellow: hsl(39, 100%, 56%);
+    --orangey_yellow_transparent: hsl(39, 100%, 56%, 10%);
+    --green_teal_transparent: hsla(166, 100%, 37%, 10%);
+    --cobalt_blue: hsl(234, 85%, 45%);
+    --cobalt_blue_transparent: hsla(234, 85%, 45%, 10%);
+
+    /*  background */
+    --light_slate_blue: hsl(252, 100%, 67%);
+    --light_royal_blue: hsl(241, 81%, 54%);
+    --light_royal_blue_transparent: hsla(241, 85%, 45%, 20%);
+    --light_saturated_cyan: hsl(180, 100%, 50%);
+
+    /* circle */
+    --violet_blue: hsl(229, 56%, 45%);
+    --persian_blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --black: #000;
+    --pale_blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --dark_gray_blue: hsl(224, 30%, 27%);
+    --dark_gray_blue_transparent: hsla(224 30%, 27%, 20%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.result__main {
+    background-image: linear-gradient(var(--light_slate_blue), 100, var(--light_royal_blue));
+    color: var(--white);
+    border-radius: 0 0 35px 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result__main p {
+    text-align: center;
+    width: 80%;
+    font-weight: 500
+    opacity: 0.5;
+}
+
+.result__summary {
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.result__main h2 {
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.result__header {
+    margin: 1em;
+}
+
+.main__score {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linnnnear-gradiennt(var(--violet_blue), 30%, var(--persian_blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__score h1 {
+    font-weight: 800;
+    font-size: 3em;
+    padding-top: 0;
+}
+
+.main__score__text {
+    margin: 0;
+    padding: 0;
+}
+
+.main__text {
+    margin: 1em 0;
+}
+
+.result__summary {
+    padding: 1em;
+}
+
+.result__summary p {
+    font-weight: 800;
+    padding-left: 1em;
+}
+
+.result__summary span {
+    font-weight: 500;
+    opacity: .5;
+    padding-left: .5em;
+}
+
+.result__summary__scores {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light_saturated_cyan);
+    margin: 1em 0;
+    padding: 1em .5em;
+    border-radius: 10px;
+}
+
+.special__border {
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    background-color: inherit;
+    opacity: .05;
+}
+
+.UL {
+    border-radius: 0 10px 0 0;
+    border-top: 2.5px solid var(--black);
+    border-left: 2.5px solid var(--black);
+    bottom: 0;
+    right: 0;
+}
+
+.UR {
+    border-radius: 0 10px 0 0;
+    border-top: 2.5px solid var(--black);
+    border-left: 2.5px solid var(--black);
+    bottom: 0;
+    right: 0;
+}
+
+.LL {
+    border-radius: 0 10px 0 0;
+    border-top: 2.5px solid var(--black);
+    border-left: 2.5px solid var(--black);
+    bottom: 0;
+    right: 0;
+}
+
+.LR {
+    border-radius: 0 10px 0 0;
+    border-top: 2.5px solid var(--black);
+    border-left: 2.5px solid var(--black);
+    bottom: 0;
+    right: 0;
+}
+
+#reaction {
+    background-color: var(--light_red_transparent);
+}
+
+#reaction .img__p__pair p {
+    opacity: 1;
+    color: var(--light_red);
+}
+
+#memory {
+    background-color: var(--orangey_yellow_transparent);
+}
+
+#memory .img__p__pair p {
+    color: var(--orangey_yellow);
+}
+
+#verbal {
+    background-color: var(--green_teal_transparent);
+}
+
+#verbal .img__p__pair p {
+    color: var(--green_teal);
+}
+
+#visual {
+    background-color: var(--cobalt_blue_transparent);
+}
+
+#visual .img__p__pair {
+    color: var(--cobalt_blue);
+}
